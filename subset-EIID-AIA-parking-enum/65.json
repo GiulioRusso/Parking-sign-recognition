@@ -1,0 +1,112 @@
+{
+  "width": 2560, 
+  "objects": [
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 1995.0, 
+        "ymin": 474.375, 
+        "ymax": 549.84375, 
+        "xmax": 2069.375
+      }, 
+      "key": "odbuxb7eywzrh0oo9gblr9", 
+      "label": "other-sign"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": true, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 1992.5, 
+        "ymin": 552.65625, 
+        "ymax": 622.03125, 
+        "xmax": 2063.75
+      }, 
+      "key": "zojsudv06coccxcz7jcwmq", 
+      "label": "other-sign"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": true, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 226.25, 
+        "ymin": 992.8125, 
+        "ymax": 1093.59375, 
+        "xmax": 328.75
+      }, 
+      "key": "d92wtmvamxkuidwlrjpxrw", 
+      "label": "other-sign"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": true, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 213.75, 
+        "ymin": 870.9375, 
+        "ymax": 971.71875, 
+        "xmax": 322.5
+      }, 
+      "key": "pmsf8x8fbms62xp5tuoryd", 
+      "label": "information--parking--g1"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": true, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 1982.5, 
+        "ymin": 627.65625, 
+        "ymax": 649.21875, 
+        "xmax": 2065.625
+      }, 
+      "key": "c3fhksmilsw1gdkb9o5e8r", 
+      "label": "other-sign"
+    }
+  ], 
+  "ispano": false, 
+  "height": 1920
+}

@@ -1,15 +1,58 @@
-# include libraries
-include_directories (${aia_SOURCE_DIR}/3rdparty/aiacommon)
-include_directories (${aia_SOURCE_DIR}/3rdparty/ucascommon)
+# Top-Level CmakeLists.txt to build AIA projects
+project( aia )
+cmake_minimum_required(VERSION 3.1)
+cmake_policy(SET CMP0054 OLD) 
+cmake_policy(SET CMP0045 OLD)
 
-# find sources
-file(GLOB src *.h *.hpp *.cpp)
+# hide unused predefined variables
+set (CMAKE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX} CACHE INTERNAL "")
 
-# fix va_start error in VS 14+
-add_definitions(-D_CRT_NO_VA_START_VALIDATION)
+# include cmake scripts
+include(cmake/utils.cmake)
 
-# create executable from sources
-add_executable(myproject ${src})
+# require C++11
+set (CMAKE_CXX_STANDARD 11)
 
-# link the executable to other modules / libraries 
-target_link_libraries(myproject aiacommon ucascommon ${OpenCV_LIBS})
+# set up library and binary directories
+if(NOT LIBRARY_OUTPUT_PATH)
+  set (LIBRARY_OUTPUT_PATH ${aia_BINARY_DIR}/libs CACHE INTERNAL "Single output directory for building all libraries.")
+endif(NOT LIBRARY_OUTPUT_PATH)
+if(NOT EXECUTABLE_OUTPUT_PATH)
+  set (EXECUTABLE_OUTPUT_PATH ${aia_BINARY_DIR}/bin CACHE INTERNAL "Single output directory for building all executables.")
+endif(NOT EXECUTABLE_OUTPUT_PATH)
+
+# set up OpenCV library
+find_package(OpenCV REQUIRED)
+if(NOT OpenCV_FOUND)
+  message(FATAL_ERROR "OpenCV library not found or not properly installed")
+endif()
+include_directories(${OpenCV_INCLUDE_DIRS})
+link_directories(${OpenCV_LIB_DIR})
+
+# set up "Release" and "Debug" as default build mode
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release CACHE STRING 
+        "Choose the type of build, options are: None(CMAKE_CXX_FLAGS or CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel." 
+        FORCE) # Default to Release
+endif()
+
+# disable annoying warnings on MSVC compilers
+if (${CMAKE_CXX_COMPILER_ID} STREQUAL "MSVC")
+	warnings_disable(CMAKE_CXX_FLAGS /wd4290) # vs2012: can't properly handle exceptions
+	warnings_disable(CMAKE_CXX_FLAGS /wd4996) # vs2012: complains about unsafe standard C++ functions
+	warnings_disable(CMAKE_CXX_FLAGS /wd4530) # vs2012: C++ exception handler used, but unwind semantics are not enabled
+	warnings_disable(CMAKE_CXX_FLAGS /wd4503) # vs2012: decorated name length exceeded
+endif()
+
+# disable annoying warning on Clang
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-varargs")
+endif()
+
+
+# define folder where example images are stored
+add_definitions(-DEXAMPLE_IMAGES_PATH="${aia_SOURCE_DIR}/example_images")
+
+# build modules
+add_subdirectory( 3rdparty )
+add_subdirectory( myproject )

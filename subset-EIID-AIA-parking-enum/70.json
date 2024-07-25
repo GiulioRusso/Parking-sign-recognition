@@ -1,0 +1,91 @@
+{
+  "width": 3264, 
+  "objects": [
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": true, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 1933.21875, 
+        "ymin": 1149.890625, 
+        "ymax": 1256.2734375, 
+        "xmax": 2040.0
+      }, 
+      "key": "h0l5nmf84t2tf7f6p5qjl6", 
+      "label": "information--parking--g1"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 815.203125, 
+        "ymin": 1356.08203125, 
+        "ymax": 1412.859375, 
+        "xmax": 837.515625
+      }, 
+      "key": "7wx7q8k6teabyjls0jrrh9", 
+      "label": "regulatory--no-parking--g1"
+    }, 
+    {
+      "properties": {
+        "ambiguous": true, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 816.0, 
+        "ymin": 1414.65234375, 
+        "ymax": 1436.16796875, 
+        "xmax": 835.921875
+      }, 
+      "key": "tktve8561j3h0428j8peqw", 
+      "label": "other-sign"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": true, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 1934.8125, 
+        "ymin": 1257.46875, 
+        "ymax": 1293.92578125, 
+        "xmax": 2040.796875
+      }, 
+      "key": "yziiwbbolc3yqlc4468tnf", 
+      "label": "other-sign"
+    }
+  ], 
+  "ispano": false, 
+  "height": 2448
+}

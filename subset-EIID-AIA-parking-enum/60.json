@@ -1,0 +1,91 @@
+{
+  "width": 4000, 
+  "objects": [
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 2751.953125, 
+        "ymin": 1231.201171875, 
+        "ymax": 1334.47265625, 
+        "xmax": 2853.515625
+      }, 
+      "key": "rc3KyJp0T0yfHp3LvzR27A", 
+      "label": "information--parking--g1"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 3142.578125, 
+        "ymin": 1219.482421875, 
+        "ymax": 1349.12109375, 
+        "xmax": 3273.4375
+      }, 
+      "key": "dwN3wkuKQpeIgq9jQ9zDng", 
+      "label": "warning--other-danger--g1"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": true, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 3230.46875, 
+        "ymin": 1683.10546875, 
+        "ymax": 1882.32421875, 
+        "xmax": 3323.2421875
+      }, 
+      "key": "IiA3EN8RQ0y9G-nEmcZDzQ", 
+      "label": "other-sign"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": true, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 3246.09375, 
+        "ymin": 1584.9609375, 
+        "ymax": 1666.9921875, 
+        "xmax": 3295.8984375
+      }, 
+      "key": "znsDCAUESrqntmxECvYSEQ", 
+      "label": "regulatory--turn-left--g1"
+    }
+  ], 
+  "ispano": false, 
+  "height": 3000
+}

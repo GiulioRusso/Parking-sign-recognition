@@ -1,0 +1,133 @@
+{
+  "width": 4160, 
+  "objects": [
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 2453.75, 
+        "ymin": 2285.91796875, 
+        "ymax": 2328.57421875, 
+        "xmax": 2551.25
+      }, 
+      "key": "wJAHqelbSSGu5IqxW-ul9A", 
+      "label": "other-sign"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 2449.6875, 
+        "ymin": 2081.015625, 
+        "ymax": 2180.80078125, 
+        "xmax": 2547.1875
+      }, 
+      "key": "SiSYOLGRQIKTkcNDd8R_wg", 
+      "label": "other-sign"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 2453.75, 
+        "ymin": 2180.80078125, 
+        "ymax": 2279.82421875, 
+        "xmax": 2546.171875
+      }, 
+      "key": "9d1lxTkKRDKg5_BtwQguWw", 
+      "label": "information--parking--g1"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": true, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 366.640625, 
+        "ymin": 2273.73046875, 
+        "ymax": 2309.53125, 
+        "xmax": 400.15625
+      }, 
+      "key": "TrqGvdXkQjqy0_IM5OMDAA", 
+      "label": "information--gas-station--g3"
+    }, 
+    {
+      "properties": {
+        "ambiguous": true, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 349.375, 
+        "ymin": 2331.62109375, 
+        "ymax": 2348.37890625, 
+        "xmax": 398.125
+      }, 
+      "key": "e8udWJwJQ7-4b1PxFo-cHg", 
+      "label": "other-sign"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 360.546875, 
+        "ymin": 2266.875, 
+        "ymax": 2327.8125, 
+        "xmax": 406.25
+      }, 
+      "key": "8tzux0GDTk6FtxqM0DrLaA", 
+      "label": "information--gas-station--g3"
+    }
+  ], 
+  "ispano": false, 
+  "height": 3120
+}

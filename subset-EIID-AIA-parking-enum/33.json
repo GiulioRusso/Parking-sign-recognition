@@ -1,0 +1,28 @@
+{
+  "width": 3264, 
+  "objects": [
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 308.390625, 
+        "ymin": 987.92578125, 
+        "ymax": 1101.48046875, 
+        "xmax": 385.6875
+      }, 
+      "key": "u9rk6y65fa4poihsy7efew", 
+      "label": "information--parking--g1"
+    }
+  ], 
+  "ispano": false, 
+  "height": 2448
+}

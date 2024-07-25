@@ -1,0 +1,49 @@
+{
+  "width": 2048, 
+  "objects": [
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 1466.0, 
+        "ymin": 986.625, 
+        "ymax": 1070.625, 
+        "xmax": 1553.0
+      }, 
+      "key": "O2exezkySCehS6n4fnbTjA", 
+      "label": "information--parking--g1"
+    }, 
+    {
+      "properties": {
+        "ambiguous": false, 
+        "dummy": false, 
+        "direction-or-information": false, 
+        "barrier": false, 
+        "occluded": false, 
+        "out-of-frame": false, 
+        "exterior": false, 
+        "included": false, 
+        "highway": false
+      }, 
+      "bbox": {
+        "xmin": 1877.0, 
+        "ymin": 998.25, 
+        "ymax": 1082.625, 
+        "xmax": 1908.5
+      }, 
+      "key": "kssNZBZMSISYWi4s1w01GQ", 
+      "label": "warning--pedestrians-crossing--g5"
+    }
+  ], 
+  "ispano": false, 
+  "height": 1536
+}
