@@ -68,6 +68,6 @@ Build the project using CMake:
 8. Run the *main.cpp* file to perform the analisys.
 
 # Performance
-The best performance is achived with the mean shift 5 plus clahe 1 on the dataset without the occluded and out of frame signgs. The best AUPR is 70.6% with an accuracy of 73.79%.
+The best performance is achived with the mean shift 5 plus clahe 1 on the dataset without the occluded and out of frame signs. The best AUPR is 70.6% with an accuracy of 73.79%.
 
 <img src="./preprocessing-data-analisys/meanshift-5-clahe-1/no-occluded-out-of-frame/precision-recall.png" width="70%"> <br>
