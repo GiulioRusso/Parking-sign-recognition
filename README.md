@@ -120,4 +120,4 @@ Note: No matter which compiling solution you use, you can build the project usin
 # Performance
 The best performance is achived with the mean shift 5 plus clahe 1 on the dataset without the occluded and out of frame signs. The best AUPR is 70.6% with an accuracy of 73.79%.
 
-<img src="./preprocessing-data-analisys/meanshift-5-clahe-1/no-occluded-out-of-frame/precision-recall.png" width="70%"> <br>
+<img src="./preprocessing-data-analisys/meanshift-5-clahe-1/no-occluded-out-of-frame-meanshift-5-clahe-1/precision-recall.png" width="70%"> <br>
