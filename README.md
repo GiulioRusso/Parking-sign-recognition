@@ -51,6 +51,53 @@ Build the project using CMake:
 4. Choose the desired generator (e.g. *Unix Makefiles* or any IDE supported by CMake)
 5. Add the OpenCV path if they are not founded. Otherwise you can specify your paths inside the CMakeLists.txt.
 6. Generate.
+
+# How to run it
+Build the project using CMake ([Download link](https://cmake.org/download/)):
+
+1. Clone the repository and select it as the source code directory.
+2. Choose the destination folder where the built project will be stored.
+3. Open CMake and click Configure.
+4. Select the desired generator:
+   - For Unix Makefiles: Choose **Unix Makefiles** and ensure **Use default native compilers** is selected.
+   - For IDEs supported by CMake (e.g., Xcode, Visual Studio, Eclipse), select the appropriate generator and ensure **Use default native compilers** is selected.
+5. If OpenCV is not found automatically:
+   - Add the OpenCV paths manually by clicking the ellipsis button next to the error message.
+   - Alternatively, update the `CMakeLists.txt` file to specify the paths of your OpenCV installation. For example:
+     ```cmake
+     # Example for OpenCV
+     set(OpenCV_DIR "/path/to/opencv/build")
+     ```
+6. Click Generate.
+
+    ### For Xcode Users
+    1. Navigate to the destination folder and open the generated Xcode project.
+    2. In Xcode, select the executable target from the top menu.
+    3. Click the Play button in Xcode to build and run the project.
+
+    Note:
+    - You may need to include the following lines in the `CMakeLists.txt` file to specify the compiler paths:
+        ```cmake
+        set(CMAKE_C_COMPILER /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc)
+        set(CMAKE_CXX_COMPILER /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++)
+        ```
+
+    - If you encounter errors, such as an unrecognized compiler during the Configure step, you can run the following command to set Xcode tools correctly:
+        ```bash
+        sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+        ```
+
+    ### For Unix Makefiles
+    1. Navigate to the build folder using a terminal.
+    2. Run the `make` command to compile the project:
+        ```bash
+        make
+        ```
+    3. After compiling, launch the application with:
+        ```bash
+        ./aia
+        ```
+
 7. Open the project folder and fill the *config.h* with your path variables. Define your identifier and define under it the necessary variables.
 
     Choose the corresponding path variables:
@@ -69,6 +116,15 @@ Build the project using CMake:
     - *USE_CLAHE*: if specified, the analisys will consider to apply clahe 1.
 
 8. Run the *main.cpp* file to perform the analisys.
+
+## Important Notes
+- Ensure the `CMakeLists.txt` file is updated with the correct paths for the OpenCV library and other dependencies.
+- Do not rename or move the source or destination folders after generating the project; otherwise, the build may fail.
+- Avoid using folder names with special characters or spaces, as they may cause errors in the build process.
+- If you encounter issues with compiler recognition during the Configure step, ensure you are using the correct toolchain or set it explicitly in the `CMakeLists.txt`.
+
+Note: No matter which compiling solution you use, you can build the project using any IDE project created by CMake (e.g., Visual Studio, Eclipse, Xcode).
+
 
 # Performance
 The best performance is achived with the mean shift 5 plus clahe 1 on the dataset without the occluded and out of frame signs. The best AUPR is 70.6% with an accuracy of 73.79%.
