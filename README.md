@@ -7,7 +7,10 @@ Example of detected signals with green contour:
 <img src="./output/89.png" width="50%"><img src="./output/92.png" width="50%"> <br>
 
 # Requirements
-- OpenCV
+- OpenCV for C++:
+    - [Download for macOS](https://docs.opencv.org/3.4/d0/db2/tutorial_macos_install.html)
+    - [Download for Linux](https://docs.opencv.org/3.4/d7/d9f/tutorial_linux_install.html)
+    - [Download for Windows](https://docs.opencv.org/3.4/d3/d52/tutorial_windows_install.html)
 
 # Dataset
 The dataset is composed of 100 images, in .jpg format, annotated using .json files. The images were renamed sequentially from 0 to 99 to better manage them.
