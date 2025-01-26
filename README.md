@@ -44,15 +44,6 @@ The following repository is organized to be built using CMake.
     <img src="./template-set-P/P-45.png" width="100" height="100"><img src="./template-set-P/P-7.png" width="100" height="100"><img src="./template-set-P/P-left.png" width="100" height="100"><img src="./template-set-P/P-right.png" width="100" height="100"><img src="./template-set-P/P-stretch.png" width="100" height="100"> <br>
 
 # How to run it
-Build the project using CMake:
-1. Clone the repository and select it as source code.
-2. Select the destination folder that will contain the built project.
-3. Click Configure.
-4. Choose the desired generator (e.g. *Unix Makefiles* or any IDE supported by CMake)
-5. Add the OpenCV path if they are not founded. Otherwise you can specify your paths inside the CMakeLists.txt.
-6. Generate.
-
-# How to run it
 Build the project using CMake ([Download link](https://cmake.org/download/)):
 
 1. Clone the repository and select it as the source code directory.
